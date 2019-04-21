@@ -4,21 +4,6 @@
 
 追求友好的 npm publish，让你发布的包支持低版本 node 的运行环境
 
-## based on babel
-
-```json
-{
-    "presets": [
-        "@babel/preset-env"
-    ],
-    "plugins": [
-        ["@babel/plugin-proposal-decorators", { "legacy": true }],
-        ["@babel/plugin-proposal-class-properties", { "loose": true }],
-        "@babel/plugin-transform-runtime"
-    ]
-}
-```
-
 ## Usage 🐾
 
 firstly, install global by npm:
@@ -31,6 +16,21 @@ then, go to the package root directory, (same as npm publish)
 
 ```bash
 nph publish
+```
+
+## Based on babel
+
+```json
+{
+    "presets": [
+        "@babel/preset-env"
+    ],
+    "plugins": [
+        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+        ["@babel/plugin-proposal-class-properties", { "loose": true }],
+        "@babel/plugin-transform-runtime"
+    ]
+}
 ```
 
 
