@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+const pkg = require('../package.json');
+const publish = require('../lib/publish');
+
+// init
+program
+    .command('publish [dir]')
+    .description('to publish package')
+    .action((dir = '') => {
+        const absoluteDirPath = dir ? `${process.cwd()}/${dir}` : process.cwd();
+
+        publish(absoluteDirPath);
+    });
+
+// version
+program.version(pkg.version);
+program.parse(process.argv);
+program.usage('<command>');
+
+if (!program.args.length) {
+    program.help();
+}
