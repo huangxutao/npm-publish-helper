@@ -8,10 +8,11 @@ const publish = require('../lib/publish');
 program
     .command('publish [dir]')
     .description('to publish package')
-    .action((dir) => {
+    .option('-s, --script <script>', 'specify the release script, default `npm`')
+    .action((dir, cmd) => {
         const absoluteDirPath = dir ? `${process.cwd()}/${dir}` : process.cwd();
 
-        publish(absoluteDirPath);
+        publish(absoluteDirPath, cmd.script || 'npm');
     });
 
 // version
