@@ -1,6 +1,6 @@
 # npm-publish-helper
 
-![](https://img.shields.io/badge/node->%3D4.0.0-brightgreen.svg) ![](https://img.shields.io/badge/npm-2.14.2-brightgreen.svg) ![](https://img.shields.io/badge/babel-7.4.3-brightgreen.svg)
+![](https://img.shields.io/badge/node->%3D6.9.0-brightgreen.svg) ![](https://img.shields.io/badge/npm-3.10.10-brightgreen.svg) ![](https://img.shields.io/badge/babel-7.4.3-brightgreen.svg)
 
 追求友好的 npm publish，让你发布的包支持低版本 node 的运行环境
 
