@@ -2,3 +2,4 @@ test
 tmp
 .npm_publish
 node_modules
+npm-debug.log
